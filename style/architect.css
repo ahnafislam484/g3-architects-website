@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.work-sans-font {
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  /* margin: 0 auto; */
+  text-decoration: none;
+  list-style: none;
+}
+/* 1st page suru aikhan theke */
+.hero {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* nav bar style suru aikhan theke */
+.brand {
+  font-size: 2.8rem;
+}
+.nav-bar {
+  display: flex;
+  max-width: 1920px;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+  justify-content: space-between;
+  align-items: center;
+}
+.link {
+  display: flex;
+  /* border: 1px solid red; */
+}
+.nav-item {
+  display: flex;
+  margin-right: 2rem;
+  /* display: flex; */
+  /* border: 2px solid red; */
+}
+.item {
+  margin-right: 70px;
+  /* border: 1px solid red; */
+}
+.item :hover {
+}
+ul a {
+  color: rgb(66, 66, 66);
+  font-family: Work Sans;
+  font-size: 1rem;
+  font-weight: 500;
+}
+/* font colour hear */
+
+/* dark-1 */
+.text-color-1 {
+  color: #131313;
+}
+.dark-2 {
+  color: #ff900e1a;
+}
+.dark-3 {
+  color: #727272;
+}
+/* container section start hear */
+.banner {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.banner-content {
+  /* border: 2px solid black; */
+  max-width: 862px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.banner-img {
+  max-width: 100%;
+}
+.banner-titel {
+  font-weight: 700;
+  font-size: 4rem;
+}
+.banner-description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(114, 114, 114);
+}
+.btn {
+  width: 180px;
+  height: 60px;
+  color: white;
+  background-color: rgb(255, 144, 14);
+  border: none;
+  border-radius: 8px;
+}
+/* 1st page end hear */
+
+@media screen and (max-width: 576px) {
+  .nav-bar, .nav-item{
+    flex-direction: column;
+  }
+  .banner-titel{
+    font-size: 2rem;
+  }
+}
