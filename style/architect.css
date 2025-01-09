@@ -10,6 +10,13 @@
   text-decoration: none;
   list-style: none;
 }
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+main > section {
+  margin-top: 150px;
+}
 /* 1st page suru aikhan theke */
 .hero {
   background-color: rgba(255, 144, 14, 0.1);
@@ -41,8 +48,7 @@
   margin-right: 70px;
   /* border: 1px solid red; */
 }
-.item :hover {
-}
+
 ul a {
   color: rgb(66, 66, 66);
   font-family: Work Sans;
@@ -92,14 +98,82 @@ ul a {
   background-color: rgb(255, 144, 14);
   border: none;
   border-radius: 8px;
+  margin-top: 30px;
 }
 /* 1st page end hear */
 
+/* 2nd page start hrar */
+.second-page {
+  /* border: 2px solid rgb(29, 200, 140); */
+  display: flex;
+}
+.image {
+  /* border: 2px solid rgb(5, 1, 1); */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  /* padding: 10px; */
+}
+.content {
+  /* border: 2px solid red; */
+  max-width: 530px;
+  margin-top: 200px;
+  margin-left: 70px;
+  margin-bottom: 200px;
+}
+.titel-no-to {
+  color: #727272;
+  font-size: 2.8rem;
+}
+.our{
+   color: #131313;
+}
+.future {
+  color: rgb(255, 144, 14);
+}
+
+/* 2nd page end hrar */
+
+/* 3rd page start hear */
+.facts-container{
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.fact{
+  border: 1px solid rgb(255, 144, 14);
+  border-radius: 8px;
+  max-width: 200px;
+height: 200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+
+/* 3rd page end hear */
+
+/* mobile phone media quary */
 @media screen and (max-width: 576px) {
-  .nav-bar, .nav-item{
+  .nav-bar,
+  .nav-item,
+  .second-page {
     flex-direction: column;
   }
-  .banner-titel{
+  .banner-titel {
     font-size: 2rem;
+  }
+  .image {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .content {
+    margin-left: 20px;
+  }
+}
+/* tablate media quary */
+@media screen and (min-width: 576px) and (max-width: 990px) {
+  .second-page {
+    flex-direction: column;
   }
 }
