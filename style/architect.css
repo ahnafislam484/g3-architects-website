@@ -17,12 +17,12 @@ main {
 main > section {
   margin-top: 150px;
 }
-/* 1st page suru aikhan theke */
+/* hero section hear */
 .hero {
   background-color: rgba(255, 144, 14, 0.1);
 }
 
-/* nav bar style suru aikhan theke */
+/* nav bar style start  hear */
 .brand {
   font-size: 2.8rem;
 }
@@ -55,7 +55,7 @@ ul a {
   font-size: 1rem;
   font-weight: 500;
 }
-/* font colour hear */
+/* font color hear */
 
 /* dark-1 */
 .text-color-1 {
@@ -67,6 +67,8 @@ ul a {
 .dark-3 {
   color: #727272;
 }
+/* nav bar end hear */
+
 /* container section start hear */
 .banner {
   max-width: 80%;
@@ -82,7 +84,7 @@ ul a {
 .banner-img {
   max-width: 100%;
 }
-.banner-titel {
+.banner-title {
   font-weight: 700;
   font-size: 4rem;
 }
@@ -102,7 +104,7 @@ ul a {
 }
 /* 1st page end hear */
 
-/* 2nd page start hrar */
+/* 2nd page start hear */
 .second-page {
   /* border: 2px solid rgb(29, 200, 140); */
   display: flex;
@@ -121,57 +123,98 @@ ul a {
   margin-left: 70px;
   margin-bottom: 200px;
 }
-.titel-no-to {
+.title-no-to {
   color: #727272;
   font-size: 2.8rem;
 }
-.our{
-   color: #131313;
+.our {
+  color: #131313;
 }
 .future {
   color: rgb(255, 144, 14);
 }
 
-/* 2nd page end hrar */
+/* 2nd page end hear */
 
 /* 3rd page start hear */
-.facts-container{
-  border: 2px solid red;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
+.third-head {
+  /* border: 2px solid red; */
+  max-width: 540px;
+  min-height: 52px;
+  margin-bottom: 100px;
 }
-.fact{
+.facts-container {
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.fact {
   border: 1px solid rgb(255, 144, 14);
   border-radius: 8px;
-  max-width: 200px;
-height: 200px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-
-
+.fact-number {
+  font: size 2.8re;
+  font-weight: 600;
+}
 /* 3rd page end hear */
 
-/* mobile phone media quary */
+/* sponsors section start hear */
+.sponsors-info {
+  border: 2px solid red;
+  max-width: 540px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.our-compani {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+.imge {
+  filter: grayscale(100%);
+}
+
+/* sponsors section end hear */
+
+/* mobile phone media */
 @media screen and (max-width: 576px) {
   .nav-bar,
   .nav-item,
   .second-page {
     flex-direction: column;
   }
-  .banner-titel {
+  .banner-title {
     font-size: 2rem;
   }
-  .image {
+  .image,
+  .facts-container,
+  .our-compani {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .our-compani {
+    justify-items:center;
+    gap: 40px;
+  }
+  .facts-container {
+    justify-items: center;
   }
   .content {
     margin-left: 20px;
   }
 }
-/* tablate media quary */
+/* tab media  */
 @media screen and (min-width: 576px) and (max-width: 990px) {
   .second-page {
     flex-direction: column;
