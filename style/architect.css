@@ -172,10 +172,8 @@ ul a {
   gap: 145px;
 }
 .Features-cart-title {
-  
   margin-top: 0px;
   margin-bottom: 0 px;
- 
 }
 #Features-section-title {
   border-left: 5px solid rgb(255, 144, 14);
@@ -188,11 +186,32 @@ ul a {
   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
   margin-bottom: 20px;
 }
-
-#ten-year{
-  
+.Features-btn {
+  max-width: 340px;
+  min-height: 200px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(255, 144, 14);
 }
 
+.Features-img > img {
+  width: 100%;
+}
+#btn-titel {
+  padding: 30px;
+  margin-left: -100px;
+  margin-top: -150px;
+}
+#ten-year {
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+#experience {
+  color: rgb(255, 255, 255);
+  font-size: 1.9rem;
+  font-weight: 500px;
+}
 
 /* <!-- Features you will love & enjoy section end --> */
 
@@ -224,6 +243,7 @@ footer {
   min-height: 100px;
   margin: 0 auto;
   margin-top: 150px;
+  margin-bottom: 150px;
   background-color: rgb(255, 244, 231);
   /* border: 2px solid red; */
   display: flex;
@@ -244,7 +264,8 @@ footer {
 @media screen and (max-width: 576px) {
   .nav-bar,
   .nav-item,
-  .second-page {
+  .second-page,
+  .Features {
     flex-direction: column;
   }
   .banner-title {
@@ -265,10 +286,20 @@ footer {
   .content {
     margin-left: 20px;
   }
+  #btn-titel {
+    margin-top: 20px;
+    margin-left: 20px;
+    
+  }
 }
 /* tab media  */
 @media screen and (min-width: 576px) and (max-width: 990px) {
-  .second-page {
+  .second-page, 
+  .Features {
     flex-direction: column;
+  }
+  #btn-titel {
+    margin-top: 20px;
+    margin-left: 30%;
   }
 }
